@@ -2,7 +2,7 @@
 <h1>Better, Faster, Userfriendly, more beautiful<3</h1>
 <hr />
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
-<img align="right" title="borabora" alt="IMG" width="400px" src="./images/view___aksaysquad__mobile.png" />
+<img align="right" title="borabora" alt="IMG" width="450px" src="./images/view___aksaysquad__mobile.png" />
 <h4>Last update:</h4>
 <p>14.05.23</p>
 <p>Adaptive layout</p>
