@@ -3,7 +3,7 @@
 <hr />
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
-<h4>Last update:</h4>
+<h4>Last updates:</h4>
 <p>14.05.23</p>
 <p>Adaptive layout</p>
 <p>21.04.23</p>
