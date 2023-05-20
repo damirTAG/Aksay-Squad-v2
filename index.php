@@ -76,9 +76,8 @@ if (isset($_GET['id'])) {
                                     <a href="./abmd">О сайте/Медиа</a>
                                 </div>
                             </div>
-                            <aside class="aside" style="position: sticky; top: 0;">
-                                <div class="aside-inner" id="aside" style="position: sticky;
-                                            top: 0;">
+                            <aside class="aside">
+                                <div class="aside-inner" id="aside">
                                     <div class="daily-quote">
                                         <h1>Цитата дня</h1>
                                         <div class="d-quote-inner">
@@ -127,15 +126,16 @@ if (isset($_GET['id'])) {
         </div>
 
     </section>
+    
 
-    <article>
-        <div class="container">
+    <article id="leftdiv">
+        <div class>
             <div class="quote" style="display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     justify-content: center;">
-                <div class="quote-h1">
+                <div class="quote-h1" style="width: auto;">
                     <h1>Оставить
                         цитату
                     </h1>
@@ -253,12 +253,11 @@ if (isset($_GET['id'])) {
 
         </div>
     </article>
-    <aside class="aside" style="position: sticky; top: 0;">
+    <aside class="aside" id="rightdiv" style="position: sticky; top: 10%;">
 
 
 
-        <div class="aside-inner" id="aside" style="position: sticky;
-        top: 0;">
+        <div class="aside-inner">
             <div class="daily-quote">
                 <h1>Цитата дня</h1>
                 <div class="d-quote-inner">
@@ -285,9 +284,7 @@ if (isset($_GET['id'])) {
                     <button>Social media</button>
                 </a>
             </div>
-            <div class="social-media-btn spotify_embed">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3LWwxOFsnrGSsBWJK93FIz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+            
             <div class="discord-widget">
                 <h1>discord</h1>
                 <iframe src="https://discord.com/widget?id=731124657603739719&theme=dark" width="280" height="290" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -298,6 +295,9 @@ if (isset($_GET['id'])) {
 
 
     </aside>
+                                            
+    </div>
+    
     <!-- damir was here -->
 </body>
 <script src="./js/jquery.js"></script>

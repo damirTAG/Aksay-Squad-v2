@@ -167,7 +167,6 @@ article {
 .quote .note {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   inline-size: 150px;
   overflow-wrap: break-word;
   padding: 20px;
@@ -319,7 +318,7 @@ aside .aside-inner {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 0;
+  top: 10%;
 }
 aside .daily-quote {
   width: 300px;
@@ -544,6 +543,9 @@ aside .discord-widget h1 {
     padding: 10px 0px 20px 0px;
     margin: 0 120px 0 0;
   }
+  article {
+    margin: auto 10px;
+  }
 }
 @media only screen and (max-width: 865px) {
   .container {
@@ -713,7 +715,7 @@ aside .discord-widget h1 {
   }
   .quote .new-note textarea,
   .quote .new-note input {
-    width: auto;
+    width: 100%;
   }
   .footer-inner .footer-title li {
     font-size: 2.7em;

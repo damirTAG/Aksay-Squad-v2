@@ -210,7 +210,7 @@ article {
         }
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         inline-size: 150px;
         overflow-wrap: break-word;
         padding: 20px;
@@ -317,7 +317,7 @@ aside {
         display: flex;
         flex-direction: column;
         position: sticky;
-        top: 0;
+        top: 10%;
     }
 
     .daily-quote {
@@ -563,6 +563,9 @@ aside {
             }
         }
     }
+    article {
+        margin: auto 10px;
+    }
 }
 @media only screen and (max-width: 865px) {
     .container {
@@ -752,7 +755,7 @@ aside {
             width: auto;
             textarea,
             input {
-                width: auto;
+                width: 100%;
             }
         }
     }
