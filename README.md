@@ -13,9 +13,8 @@
 
  ### I'm currenlty working on optimizing and fixing bugs on release
   
- 
+ <br />
 <p>💩unnecessary links</p>
-[//]: # (LINKS)
 [Aksay Squad Telegram](https://t.me/aksaysquad)
  <br />
 [Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
