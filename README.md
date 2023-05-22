@@ -15,11 +15,12 @@
   
 [//]: # (LINKS)
 [Aksay Squad Telegram](https://t.me/aksaysquad)
+ <br />
 [Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
 ### webdev contact
 [telegram](https://t.me/damirtag)
 
- ##Future updates
+ ## Future updates
 - [x] Liking System
 - [ ] Light theme
 - [ ] Login System
