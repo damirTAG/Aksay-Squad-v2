@@ -14,7 +14,13 @@
  ### I'm currenlty working on optimizing and fixing bugs on release
   
 [//]: # (LINKS)
-[https://telegram.org](https://t.me/aksaysquad)
-[Discord](https://discord.gg/NpbeqAe9tj)
-  ###webdev contact
- [telegram](https://t.me/damirtag)
+[Aksay Squad Telegram](https://t.me/aksaysquad)
+[Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
+### webdev contact
+[telegram](https://t.me/damirtag)
+
+ ##Future updates
+- [x] Liking System
+- [ ] Light theme
+- [ ] Login System
+- [ ] Create simple forum
