@@ -25,7 +25,8 @@ Liking system, some upgrades, css features, demo memes section, database update
  
 ### 💩unnecessary links
 [![Aksay Squad Telegram](https://img.shields.io/badge/Telegram-%40aksaysquad-yellowgreen)](https://t.me/aksaysquad) <br />
-[Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
+[![Discord Aksay Squad](https://img.shields.io/badge/Discord-aksaysquad.gg-blue)](https://discord.gg/NpbeqAe9tj)
+ 
 ### webdev contact
 [damirtag](https://t.me/damirtag).
 
