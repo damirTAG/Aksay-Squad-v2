@@ -6,7 +6,7 @@
 ### Last updates: 
  <br />
 22.05.23
- <br />
+
 Release on [infinityfreeapp.com](https://aksaysquad.infinityfreeapp.com/)
  <br />
 14.05.23
