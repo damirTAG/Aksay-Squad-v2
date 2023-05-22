@@ -3,22 +3,22 @@
 <hr />
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
-<h4>Last updates:</h4>
-<p>14.05.23</p>
-<p>Adaptive layout</p>
-<p>14.05.23</p>
-<p>Adaptive layout</p>
-<p>21.04.23</p>
-<p>Liking system, some upgrades, css features, demo memes section, database update</p>
+###Last updates:
+14.05.23
+Adaptive layout
+14.05.23
+Adaptive layout
+21.04.23
+Liking system, some upgrades, css features, demo memes section, database update
 
 ### I'm currenlty working on optimizing and fixing bugs on release
-
- <p>💩unnecessary links</p>
+<hr />
+ 
+### 💩unnecessary links
 [Aksay Squad Telegram](https://t.me/aksaysquad)
-<br />
 [Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
 ### webdev contact
-[damirtag](https://t.me/damirtag)
+[damirtag](https://t.me/damirtag).
 
  ## 💯Future updates
 - [x] Liking System
