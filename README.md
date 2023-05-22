@@ -14,7 +14,7 @@
  ### I'm currenlty working on optimizing and fixing bugs on release
   
  
- 💩<p>unnecessary links</p>
+<p>💩unnecessary links</p>
 [//]: # (LINKS)
 [Aksay Squad Telegram](https://t.me/aksaysquad)
  <br />
