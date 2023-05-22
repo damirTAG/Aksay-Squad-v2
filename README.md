@@ -3,7 +3,7 @@
 <hr />
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
- ### Last updates: 
+ ### Last updates
  <br />
  22.05.23 /3
  QUOTE.PHP
