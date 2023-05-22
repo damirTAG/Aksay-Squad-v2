@@ -12,7 +12,7 @@
 <p>Liking system, some upgrades, css features, demo memes section, database update</p>
 
 ### I'm currenlty working on optimizing and fixing bugs on release
- <br
+
  <p>💩unnecessary links</p>
 [Aksay Squad Telegram](https://t.me/aksaysquad)
 <br />
