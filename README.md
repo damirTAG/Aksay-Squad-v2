@@ -5,9 +5,9 @@
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
 ### Last updates: 
  <br />
-14.05.23
+22.05.23
  <br />
-Adaptive layout
+Release on [infinityfreeapp.com](https://aksaysquad.infinityfreeapp.com/)
  <br />
 14.05.23
  <br />
@@ -21,7 +21,7 @@ Liking system, some upgrades, css features, demo memes section, database update
 <hr />
  
 ### 💩unnecessary links
-[Aksay Squad Telegram](https://t.me/aksaysquad)
+[Aksay Squad Telegram](https://t.me/aksaysquad) <br />
 [Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
 ### webdev contact
 [damirtag](https://t.me/damirtag).
