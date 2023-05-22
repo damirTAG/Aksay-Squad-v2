@@ -4,6 +4,9 @@
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
 ### Last updates: 
+ 22.05.23 /2
+ 
+ Added Discord Webhook to our server
  <br />
 22.05.23
 
