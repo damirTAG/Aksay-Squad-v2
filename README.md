@@ -13,6 +13,8 @@
 
  ### I'm currenlty working on optimizing and fixing bugs on release
   
+ 
+ 💩<p>unnecessary links</p>
 [//]: # (LINKS)
 [Aksay Squad Telegram](https://t.me/aksaysquad)
  <br />
@@ -20,7 +22,7 @@
 ### webdev contact
 [telegram](https://t.me/damirtag)
 
- ## Future updates
+ ## 💯Future updates
 - [x] Liking System
 - [ ] Light theme
 - [ ] Login System
