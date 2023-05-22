@@ -11,15 +11,14 @@
 <p>21.04.23</p>
 <p>Liking system, some upgrades, css features, demo memes section, database update</p>
 
- ### I'm currenlty working on optimizing and fixing bugs on release
-  
- <br />
-<p>💩unnecessary links</p>
+### I'm currenlty working on optimizing and fixing bugs on release
+ <br
+ <p>💩unnecessary links</p>
 [Aksay Squad Telegram](https://t.me/aksaysquad)
- <br />
+<br />
 [Discord Aksay Squad](https://discord.gg/NpbeqAe9tj)
 ### webdev contact
-[telegram](https://t.me/damirtag)
+[damirtag](https://t.me/damirtag)
 
  ## 💯Future updates
 - [x] Liking System
