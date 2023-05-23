@@ -1,1 +1,5 @@
-here is the main content of the website
+this site was created for the pet-project
+//
+//
+//
+all credits goes to https://github.com/damirTAG
