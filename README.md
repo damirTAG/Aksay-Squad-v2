@@ -3,6 +3,8 @@
 <hr />
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
+ 
+ see [last updates](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt)
  <h5>Last updates</h5>
  <br />
  22.05.23 /3
@@ -15,7 +17,7 @@
  <br />
 22.05.23
 
-Release on [infinityfreeapp.com](https://aksaysquad.infinityfreeapp.com/)
+Release on [infinityfreeapp.com](https://infinityfreeapp.com/)
  <br />
 14.05.23
  <br />
