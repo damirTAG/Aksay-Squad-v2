@@ -1,5 +1,7 @@
 this site was created for the pet-project
-//
-all credits goes to https://github.com/damirTAG
+\\
+development and features - https://github.com/damirTAG
+design - https://t.me/beerliyo
 //
 use for educational purposes only
+\\
