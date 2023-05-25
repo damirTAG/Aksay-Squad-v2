@@ -1,5 +1,5 @@
 this site was created for the pet-project
 //
-//
-//
 all credits goes to https://github.com/damirTAG
+//
+use for educational purposes only
