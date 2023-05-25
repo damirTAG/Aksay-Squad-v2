@@ -5,27 +5,6 @@
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
  
  read [meesage.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt)
- <h5>Last updates</h5>
- <br />
- 22.05.23 /3
- 
- QUOTE.PHP
- <br />
- 22.05.23 /2
- 
- Added Discord Webhook to our server
- <br />
-22.05.23
-
-Release on [infinityfreeapp.com](https://infinityfreeapp.com/)
- <br />
-14.05.23
- <br />
-Adaptive layout
- <br />
-21.04.23
- <br />
-Liking system, some upgrades, css features, demo memes section, database update
 
 ### I'm currenlty working on optimizing and fixing bugs on release
 <hr />
