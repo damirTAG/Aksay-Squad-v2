@@ -5,7 +5,9 @@
 <img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
  
  read [meesage.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt)
-
+ 
+###use for educational purposes only.
+ 
 ### I'm currenlty working on optimizing and fixing bugs on release
 <hr />
  
