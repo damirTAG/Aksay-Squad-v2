@@ -8,7 +8,8 @@ class Connection
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('mysql:server=localhost;dbname=notes', 'root', '');
+            $this->pdo = new PDO('mysql:server=localhost;dbname=notes', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"));
+            
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         } catch (PDOException $exception) {
             echo "ERROR: " . $exception->getMessage();
@@ -52,6 +53,30 @@ class Connection
     public function getNoteById($id)
     {
         $statement = $this->pdo->prepare("SELECT * FROM quotes WHERE id = :id");
+        $statement->bindValue('id', $id);
+        $statement->execute();
+        return $statement->fetch(PDO::FETCH_ASSOC);
+    }
+    //audio
+
+    public function addAudioTitle($title)
+    {
+        $statement = $this->pdo->prepare("INSERT INTO audios (audio-title)
+                                    VALUE (:title");
+        $statement->bindValue('audio-title', $title['title']);
+        return $statement->execute();
+    }
+    public function getAudioByTitle($title)
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM audios WHERE title = :title");
+        $statement->bindValue('audio-title', $audiottl);
+        $statement->execute();
+        return $statement->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function getAudioById($id)
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM audios WHERE id = :id");
         $statement->bindValue('id', $id);
         $statement->execute();
         return $statement->fetch(PDO::FETCH_ASSOC);

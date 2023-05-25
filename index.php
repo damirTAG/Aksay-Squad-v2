@@ -18,7 +18,6 @@ if (isset($_GET['id'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -30,6 +29,9 @@ if (isset($_GET['id'])) {
     <meta name="keywords" content="цитаты, база воспоминаний, о сайте, feedback" />
     <!-- <meta name="robots" content="index, follow" /> -->
     <script src="./voting_mp/voting.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="canonical" href="https://aksaysquad.infinityfreeapp.com" />
     <link rel="shortcut icon" href="./images/Ellipse 1.png" type="image/x-icon" />
@@ -96,12 +98,10 @@ if (isset($_GET['id'])) {
                                             <button>Social media</button>
                                         </a>
                                     </div>
-                                    <div class="social-media-btn spotify_embed">
-                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3LWwxOFsnrGSsBWJK93FIz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+                                    
                                     <div class="discord-widget">
                                         <h1>discord</h1>
-                                        <iframe src="https://discord.com/widget?id=731124657603739719&theme=dark" width="280" height="290" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                                        <!-- <iframe src="https://discord.com/widget?id=731124657603739719&theme=dark" width="280" height="290" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
                                     </div>
                                 </div>
                             </aside>
@@ -131,20 +131,29 @@ if (isset($_GET['id'])) {
     <article id="leftdiv">
         <div class>
             <div class="quote" style="display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;">
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;">
                 <div class="quote-h1" style="width: auto;">
                     <h1>Оставить
                         цитату
                     </h1>
-                    <div class="search-bar">
+                    <div class="search-error" style="display: flex; flex-wrap: wrap;">
+                        <div class="search-error-inner" style="display: flex;">
+                        <p>
+                            поиск временно не работает
+                        </p>           
+                        
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="search-bar">
                         <form method="POST" action="index.php" style="margin: 0;">
                             <input type="text" id="search" autocomplete="off" style="color:#fff;" value="<?php echo isset($_POST['keyword']) ? $_POST['keyword'] : '' ?>" name="keyword" placeholder="Поиск" />
                             <button class="search-btn" name="search"><ion-icon name="search"></ion-icon></button>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
                 <br>
 
@@ -162,9 +171,7 @@ if (isset($_GET['id'])) {
                         <label id="ebcaptchatext" style="color:#fff;"></label>
                         <input type="text" placeholder="Ответ" maxlength="2" class="text__box" id="ebcaptchainput" />
                     </div>
-
-
-                    <button type="submit" style="margin-top:20px;">
+                    <button type="submit" name=“Submit” style="margin-top:20px;">
 
                         <?php if ($currentNote['id']) : ?>
                             Обновить
@@ -173,56 +180,28 @@ if (isset($_GET['id'])) {
                         <?php endif ?>
                     </button>
                 </form>
-                <?php
-                if (isset($_POST['search'])) {
-                    $keyword = $_POST['keyword'];
-                ?>
-                    <div>
-                        <h2 style="color:#fff;">Результат:</h2>
-                        <hr />
-                        <?php
-                        require 'conn.php';
-                        $query = mysqli_query($conn, "SELECT * FROM `quotes` WHERE `title` LIKE '%$keyword%' ORDER BY `title`") or die(mysqli_error());
-                        while ($fetch = mysqli_fetch_array($query)) {
-                        ?>
-
-
-                            <div class="note">
-                                <div class="title">
-                                    <form action="delete.php" method="post">
-                                        <input type="hidden" required name="id" value="<?php echo $fetch['id'] ?>">
-                                        <button class="close"></button>
-                                    </form>
-                                    <a href="?id=<?php echo $fetch['id'] ?>"><?php echo $fetch['title'] ?></a>
-                                </div>
-                                <div class="description">
-                                    <?php echo substr($fetch['description'], 0, 100) ?>...
-                                </div>
-                                <div class="vot_mp2" data-vote_id="<?php echo $fetch['id'] ?>"></div>
-                                <small class="date-time"><?php echo date('d/m/Y H:i', strtotime($fetch['create_date'])) ?></small>
-                            </div>
-                            <hr />
-                        <?php
-                        }
-                        ?>
-                    </div>
-                <?php
-                }
-                ?>
-
-
-
+                <!-- COPY THIS BEGINING -->
+                <!-- upload audio file here -->
+                <form class="new-note" action="upload.php" method="post" enctype="multipart/form-data" style="margin-top: 20px">
+                <h1 style="font-size: 18px; font-weight: 500; margin-bottom: 20px;">Отправить аудио-цитату:</h1>
+                <!-- <input style="margin-bottom: 20px;" type="text" name="audio-title" placeholder="Автор или название" maxlength="40" required autocomplete="off"> -->
+                    <input style="margin-bottom: 20px; padding: 10px; height: auto;" type="file" name="file" required>
+                    <button type="submit" name="submit">Отправить</button>
+                </form>
+                <!-- /upload audio file here-->
+                
+                <!-- show audio quotes -->
                 <?php
                 foreach ($notes as $note) : ?>
+                    
 
-
-                    <div class="note" style="margin-bottom: 10px; margin-top: 10px;">
+                    <div class="note" style="margin-bottom: 10px; margin-top: 10px;" id="<?php echo $note['id'] ?>">
                         <div class="title">
                             <form action="delete.php" method="post">
                                 <input type="hidden" required name="id" value="<?php echo $note['id'] ?>">
                                 <button class="close"></button>
                             </form>
-                            <a href="?id=<?php echo $note['id'] ?>">
+                            <a href="quote.php?id=<?php echo $note['id'] ?>">
                                 <?php echo $note['title'] ?>
                             </a>
                         </div>
@@ -230,18 +209,23 @@ if (isset($_GET['id'])) {
                             <?php echo $note['description'] ?>
                         </div>
                         <br>
-                        <div class="ajax-vote">
-                            <!-- <p style="font-size:11px;">*ваша оценка:</p>  -->
-                            <div class="vot_mp2" title="Ваша оценка" data-vote_id="<?php echo $note['id'] ?>">
+                        <div class="share" >
+                            <div class="share-button" style="display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;flex-direction: row; align-items:center;">        
+                                <a title="поделиться" target="_blank" href="https://t.me/share/url?url=https://aksaysquad.infinityfreeapp.com/quote.php?id=<?php echo $note['id']?>"><ion-icon name="share-social-outline"></ion-icon></a>    
+                                <small class="date-time"><?php echo date('d/m/Y H:i', strtotime($note['create_date'])) ?></small>    
                             </div>
                         </div>
+                         <!--<div class="ajax-vote"> 
+                            <p style="font-size:11px;">*ваша оценка:</p>  
+                            <div class="vot_mp2" title="Ваша оценка" data-vote_id="<?php echo $note['id'] ?>">
+                            </div>
+                        </div>-->
 
-                        <small class="date-time"><?php echo date('d/m/Y H:i', strtotime($note['create_date'])) ?></small>
-
+                        
                     </div>
-
+                
                 <?php endforeach; ?>
-
+                        
 
             </div>
 
@@ -287,7 +271,7 @@ if (isset($_GET['id'])) {
             
             <div class="discord-widget">
                 <h1>discord</h1>
-                <iframe src="https://discord.com/widget?id=731124657603739719&theme=dark" width="280" height="290" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <!-- <iframe src="https://discord.com/widget?id=731124657603739719&theme=dark" width="280" height="290" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
             </div>
         </div>
 
@@ -301,6 +285,44 @@ if (isset($_GET['id'])) {
     <!-- damir was here -->
 </body>
 <script src="./js/jquery.js"></script>
+<!--web push notification-->
+<script>
+    pushNotify();
+            function pushNotify() {
+            	if (!("Notification" in window)) {
+            		// checking if the user's browser supports web push Notification
+            		alert("Web browser does not support desktop notification");
+            	} else if (Notification.permission === "granted") {
+            		console.log("Permission to show web push notifications granted.");
+            		// if notification permissions is granted,
+            		// then create a Notification object
+            		createNotification();
+            	} else if (Notification.permission !== "denied") {
+            		alert("Going to ask for permission to show web push notification");
+            		// User should give explicit permission
+            		Notification.requestPermission().then((permission) => {
+            			// If the user accepts, let's create a notification
+            			createNotification();
+            		});
+            	}
+            	// User has not granted to show web push notifications via Browser
+            	// Let's honor his decision and not keep pestering anymore
+            }
+
+            function createNotification() {
+            	var notification = new Notification('Web Push Notification', {
+            		icon: 'https://aksaysquad.infinityfreeapp.com/images/Ellipse%201.png',
+            		body: 'Новая цитата!',
+            	});
+            	// url that needs to be opened on clicking the notification
+            	// finally everything boils down to click and visits right
+            	notification.onclick = function() {
+            		window.open('https://aksaysquad.infinityfreeapp.com/');
+            	};
+            }
+</script>
+<!--//end web push notification-->
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://kit.fontawesome.com/977ab4e732.js" crossorigin="anonymous"></script>
