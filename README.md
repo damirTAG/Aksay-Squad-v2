@@ -20,6 +20,7 @@
 
  ## 💯Future updates
 - [x] Liking System
+- [ ] Push notifications
 - [ ] Light theme
 - [ ] Login System
 - [ ] Create simple forum
