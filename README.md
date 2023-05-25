@@ -16,10 +16,14 @@
 [![Discord Aksay Squad](https://img.shields.io/badge/Discord-aksaysquad.gg-blue)](https://discord.gg/NpbeqAe9tj)
  
 ### contacts
-[web dev](https://t.me/damirtag).
+[web dev](https://t.me/damirtag)
+ 
 [helper](https://t.me/aswsss)
+ 
 [designer](https://t.me/beerliyo)
+ 
 [logo designer](https://t.me/NajsosodjdtsjamsksoSoxfud8eik2o0)
+ 
  ## 💯Future updates
 - [x] Audio-quotes uploading.
 - [ ] Push notifications.
