@@ -2,7 +2,7 @@
 <h1>Better, Faster, Userfriendly, more beautiful<3</h1>
 <hr />
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
-<img align="right" title="borabora" alt="IMG" width="500px" src="./images/view___aksaysquad__mobile.png" />
+<img align="right" title="borabora" alt="IMG" width="350px" src="./images/view___aksaysquad__mobile.png" />
  
  read [meesage.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt).
  
