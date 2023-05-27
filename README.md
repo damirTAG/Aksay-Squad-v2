@@ -4,11 +4,11 @@
 <img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
 <img align="right" title="borabora" alt="IMG" width="350px" src="./images/view___aksaysquad__mobile.png" />
  
- read [message.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt).
+### Important! READ [message.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt).
  
 ### use for educational purposes only.
  
-### I'm currenlty working on optimizing and fixing bugs on release.
+ I'm currenlty working on optimizing and fixing bugs on release.
 <hr />
  
 ### 💩unnecessary links
