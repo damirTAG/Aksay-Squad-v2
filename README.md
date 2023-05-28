@@ -5,7 +5,9 @@
 <img align="right" title="borabora" alt="IMG" width="350px" src="./images/view___aksaysquad__mobile.png" />
  
 ### Important! READ [message.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt).
-<img alt="Discord" src="https://img.shields.io/discord/731124657603739719?logo=discord&logoColor=%23fff&style=for-the-badge" title="https://discord.gg/NpbeqAe9tj"> 
+ <a href="https://discord.gg/NpbeqAe9tj" style="text-align: center">
+  <img alt="Discord" src="https://img.shields.io/discord/731124657603739719?logo=discord&logoColor=%23fff&style=for-the-badge" title="https://discord.gg/NpbeqAe9tj"> 
+ </a>
 ### use for educational purposes only.
  
  I'm currenlty working on optimizing and fixing bugs on release.
