@@ -5,7 +5,7 @@
 <img align="right" title="borabora" alt="IMG" width="350px" src="./images/view___aksaysquad__mobile.png" />
  
 ### Important! READ [message.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt).
- <a href="https://discord.gg/NpbeqAe9tj">
+ <a target="_blank" href="https://discord.gg/NpbeqAe9tj">
   <img alt="Discord" src="https://img.shields.io/discord/731124657603739719?logo=discord&logoColor=%23fff&style=for-the-badge" title="https://discord.gg/NpbeqAe9tj"> 
  </a>
  
