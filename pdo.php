@@ -1,6 +1,6 @@
 <?php
-date_default_timezone_set("Asia/Oral");
-date_default_timezone_set("Asia/Almaty");
+// date_default_timezone_set("Asia/Oral");
+// date_default_timezone_set("Asia/Almaty");
 class Connection
 {
     public $pdo = null;
