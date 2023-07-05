@@ -22,8 +22,10 @@ if (isset($_GET['id'])) {
     <meta name="description" content="AKSAY SQUAD OFFICIAL SITE" />
     <meta name="keywords" content="цитаты, база воспоминаний, о сайте, feedback" />
     <meta property="og:title" content="Цитата из Aksay Squad website" />
-    <meta property="og:type" content="чекайте цитату <?php echo $currentNote['title'] ?>а" />
-    <meta property="og:url" content="https://aksaysquad.infinityfreeapp.com/quote.php?id=<?php echo $currentNote['id'] ?>" />
+    
+    <meta property="og:type" content="чекайте аудио-цитату под названием <?php echo $currentAudio['names'] ?>" />
+    <meta property="og:url" content="https://aksaysquad.infinityfreeapp.com/quote.php?id=<?php echo $currentAudio['id'] ?>" />
+    
     <!-- <meta name="robots" content="index, follow" /> -->
     <!-- <script src="./voting_mp/voting.js" type="text/javascript"></script> -->
     <link rel="stylesheet" href="style.css">
@@ -54,18 +56,18 @@ if (isset($_GET['id'])) {
         }
     </style>
     <?php
-                        require 'dbConfig.php';
+    require 'dbConfig.php';
 
-                        $query = $db->query("SELECT * FROM audios WHERE status = 1 ORDER BY uploaded_on DESC");
+    $query = $db->query("SELECT * FROM audios WHERE status = 1 ORDER BY uploaded_on DESC");
                         
-                        if($query->num_rows > 0){
-                            while($row = $query->fetch_assoc()){
-                                $imageThumbURL = 'uploads/thumb/'.$row["file_name"];
-                                $imageURL = 'uploads/'.$row["file_name"];
-                        ?>
+    if($query->num_rows > 0){
+         while($row = $query->fetch_assoc()){
+            $imageThumbURL = 'uploads/thumb/'.$row["file_name"];
+            $imageURL = 'uploads/'.$row["file_name"];
+         ?>
     <title>Аудио-цитата номер <?php echo $row['id'] ?></title>
     <?php }
-                 } ?>
+     } ?>
 </head>
 
 <body id="index">
@@ -132,8 +134,8 @@ if (isset($_GET['id'])) {
                         <div class="title">
                                 <input type="hidden" required name="id">
                                 <button class="close"></button>
-                            <a>
-                                <?php echo $currentAudio['title'] ?>
+                            <a style="margin-left: 10px">
+                                <?php echo $currentAudio['names'] ?>
                             </a>
                         </div>
                         <br>
@@ -173,6 +175,17 @@ if (isset($_GET['id'])) {
         <!-- /подвал -->
 </body>
 <script src="./js/jquery.js"></script>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+        new Date().getFullYear();
+        $(document).ready(function () {
+            $(".header_burger").click(function (event) {
+                $(".header_burger,.burger_list").toggleClass("active");
+                $("body").toggleClass("lock");
+            });
+    });
+    
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://kit.fontawesome.com/977ab4e732.js" crossorigin="anonymous"></script>

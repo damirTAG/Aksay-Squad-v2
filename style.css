@@ -3,7 +3,16 @@ input {
   color: #fff;
 }
 
+audio {
+  border: 10px solid #202125;
+  font-family: Montserrat, sans-serif;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 body {
+  color: #fff;
   background: url(./images/Group\ 2.png) center no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -321,6 +330,7 @@ aside .aside-inner {
   top: 10%;
 }
 aside .daily-quote {
+  color: black;
   width: 300px;
   padding: 20px;
   min-height: 100px;
@@ -701,7 +711,6 @@ aside .discord-widget h1 {
     transform: translate(-20%, -20%);
   }
   .quote .quote-h1 {
-    height: auto;
     justify-content: center;
   }
   .quote .note {
@@ -743,4 +752,7 @@ aside .discord-widget h1 {
 .active {
   background: none;
   color: black;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*quotestype*/
+/*quotestype END*//*# sourceMappingURL=style.css.map */
