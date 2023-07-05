@@ -142,7 +142,7 @@ if (isset($_GET['id'])) {
                     <div class="search-error" style="display: flex; flex-wrap: wrap;">
                         <div class="search-error-inner" style="display: flex;">
                         <p>
-                            поиск временно не работает
+                            
                         </p>           
                         
                         </div>
@@ -180,7 +180,7 @@ if (isset($_GET['id'])) {
                         <?php endif ?>
                     </button>
                 </form>
-                <!-- COPY THIS BEGINING -->
+                
                 <!-- upload audio file here -->
                 <form class="new-note" action="upload.php" method="post" enctype="multipart/form-data" style="margin-top: 20px">
                 <h1 style="font-size: 18px; font-weight: 500; margin-bottom: 20px;">Отправить аудио-цитату:</h1>
@@ -287,6 +287,7 @@ if (isset($_GET['id'])) {
 <script src="./js/jquery.js"></script>
 <!--web push notification-->
 <script>
+    /*
     pushNotify();
             function pushNotify() {
             	if (!("Notification" in window)) {
@@ -320,6 +321,7 @@ if (isset($_GET['id'])) {
             		window.open('https://aksaysquad.infinityfreeapp.com/');
             	};
             }
+            */
 </script>
 <!--//end web push notification-->
 
