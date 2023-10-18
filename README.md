@@ -29,7 +29,5 @@
  
  ## 💯Future updates
 - [x] Audio-quotes uploading.
-- [ ] Push notifications.
 - [ ] Light theme.
 - [ ] Login System.
-- [ ] Create simple forum.
