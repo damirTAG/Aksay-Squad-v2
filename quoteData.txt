@@ -1,6 +1,0 @@
-example here
-<br>
-<b>example here</b>
-something here
-<br>
-<b>author write here</b>
