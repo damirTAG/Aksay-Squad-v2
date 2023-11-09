@@ -1,0 +1,173 @@
+$theme-color: #202125;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background: url(../images/Group\ 2.png) center no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        z-index: 1;
+    }
+    .video-media {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.intro::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.intro-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .intro-title {
+        font-size: 45px;
+        color: #fff;
+        text-align: center;
+        animation: 5s fadeIn;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.dropdown-icon {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.flex-icon ion-icon {
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+// tags
+#data_as {
+    color: #fff;
+
+    .wrapp-nav {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    a {
+        text-decoration: none;
+    }
+    .wrapper-text h4 {
+        color: #fff;
+        font-size: 21px;
+        margin: 20px 20px 20px 0px;
+    }
+}
+.button-value {
+    border: 2px solid #fff;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+}
+.active {
+    background-color: #ffe601;
+    color: black;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #202125;
+    max-width: 18em;
+    margin: 2.2em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 15em;
+    }
+}
+.image-container {
+    text-align: center;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    #products img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+}
+#FullImageView {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#FullImage {
+    padding: 24px;
+    max-width: 98%;
+    max-height: 98%;
+}
+#CloseButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
