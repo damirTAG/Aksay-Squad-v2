@@ -83,3 +83,17 @@ function slowScroll(id) {
     );
     return false;
 }
+
+// audio play on each page
+window.onload = function () {
+    var audio = document.getElementById("audio-quotes");
+
+    if (localStorage.getItem("audioTime")) {
+        audio.currentTime = parseFloat(localStorage.getItem("audioTime"));
+        audio.play();
+    }
+
+    window.onbeforeunload = function () {
+        localStorage.setItem("audioTime", audio.currentTime);
+    };
+};
