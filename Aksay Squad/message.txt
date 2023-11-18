@@ -1,7 +1,6 @@
-this site was created for the pet-project
-\\
+This site was created for the my pet-project with my friends
+
 development and features - https://github.com/damirTAG
 design - https://t.me/beerliyo
-//
-use for educational purposes only
-\\
+
+Use for educational purposes only
