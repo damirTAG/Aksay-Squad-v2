@@ -30,7 +30,7 @@
  
  ## 💯Future updates
 - [x] Search by quotes.
-- [x] Audio-quotes uploading. (Not available (see)[CHANGELOG.MD#-006])
+- [x] Audio-quotes uploading. (Not available [see](CHANGELOG.MD#-006))
 - [x] Pagination.
 - [ ] Light theme.
 - [ ] Login system.
