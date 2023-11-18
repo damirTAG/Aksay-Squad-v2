@@ -1,8 +1,8 @@
 # Aksay-Squad-v2
 <h1>Better, Faster, Userfriendly, more beautiful<3</h1>
 <hr />
-<img align="center" title="borabora" alt="IMG" src="./images/view___aksaysquad.png" />
-<img align="right" title="borabora" alt="IMG" width="350px" src="./images/view___aksaysquad__mobile.png" />
+<img align="center" title="borabora" alt="IMG" src="./Aksay Squad/./images/view___aksaysquad.png" />
+<img align="right" title="borabora" alt="IMG" width="350px" src="./Aksay Squad/./images/view___aksaysquad__mobile.png" />
  
 ### Important! READ [message.txt](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/message.txt).
  <a href="https://discord.gg/NpbeqAe9tj" target="_blank">
