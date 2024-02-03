@@ -9,10 +9,6 @@
  <a href="https://discord.gg/NpbeqAe9tj" target="_blank">
   <img alt="Discord" src="https://img.shields.io/discord/731124657603739719?logo=discord&logoColor=%23fff&style=for-the-badge" title="click!">
  </a>
- 
-### use for educational purposes only.
- 
- I'm currenlty working on optimizing and fixing bugs on release.
 <hr />
  
 ### 💩unnecessary links
@@ -29,6 +25,10 @@
 [logo designer](https://t.me/NajsosodjdtsjamsksoSoxfud8eik2o0)
  
  ## 💯Future updates
-- [x] Audio-quotes uploading.
+- [x] Search by quotes.
+- [x] Audio-quotes uploading. (Not available [see](CHANGELOG.MD#-006))
+- [x] Pagination.
 - [ ] Light theme.
-- [ ] Login System.
+- [ ] Login system.
+
+### Invented and implemented — March 11, 2023 | Improved — 2 May, 2023
