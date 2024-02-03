@@ -1,8 +1,9 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-date_default_timezone_set("Asia/Oral");
+// date_default_timezone_set("Asia/Oral");
 date_default_timezone_set("Asia/Almaty");
+
 
 /** @var Connection $connection */
 $connection = require_once 'pdo.php';
@@ -41,8 +42,8 @@ if (!empty($searchQuery)) {
     $notes = $connection->getNotesPaginated($notesPerPage, $offset);
 }
 
-function getRandomQuoteOfTheDay($connection) {
-    $sql = "SELECT title, description FROM quotes ORDER BY RAND() LIMIT 1";
+function getQuoteOfTheDay($connection) {
+    $sql = "SELECT description AS 'Quote of the Day', title FROM quotes ORDER BY CONVERT(CONCAT(CURDATE(), ' ', CURTIME()), DATETIME) LIMIT 1;";
     $stmt = $connection->pdo->prepare($sql);
     $stmt->execute();
 
@@ -55,36 +56,32 @@ function getRandomQuoteOfTheDay($connection) {
     }
 }
 
-$quoteOfTheDay = getRandomQuoteOfTheDay($connection);
+$quoteOfTheDay = getQuoteOfTheDay($connection);
 
 if ($quoteOfTheDay !== "No quotes available.") {
+    $description = $quoteOfTheDay['Quote of the Day'];
     $author = $quoteOfTheDay['title'];
-    $description = $quoteOfTheDay['description'];
 } else {
-    $author = "Author not found";
     $description = "No quotes available.";
+    $author = 'No quote author available';
 }
 
 function getFormattedDate($date) {
     $today = strtotime(date('Y-m-d'));
     $dateToCheck = strtotime(date('Y-m-d', strtotime($date)));
 
-    if ($today - $dateToCheck == 86400) { // 86400 секунд в одном дне
+    if ($today == $dateToCheck) {
+        return 'Сегодня в ' . date('H:i', strtotime($date));
+    } elseif ($today - $dateToCheck == 86400) { // 86400 секунд в одном дне
         return 'Вчера в ' . date('H:i', strtotime($date));
     } else {
-        setlocale(LC_TIME, 'ru_RU.UTF-8'); // Устанавливаем локаль на русский
-
-        $englishMonths = array(
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
-        );
+        setlocale(LC_TIME, 'ru_RU.UTF-8');
 
         $russianMonths = array(
             'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
             'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
         );
 
-        // Форматируем дату с учётом локали и переводим месяц на русский
         return strftime('%e ', strtotime($date)) . $russianMonths[date('n', strtotime($date)) - 1] . strftime(' %Y в %H:%M', strtotime($date));
     }
 }
@@ -231,16 +228,10 @@ for more information: github.com/damirTAG/Aksay-Squad-v2
                             <aside class="aside">
                                 <div class="aside-inner" id="aside">
                                     <div class="daily-quote">
-                                        <h1>Цитата дня</h1>
+                                    <h1>рандом цитата</h1>
                                         <div class="d-quote-inner">
                                             <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                                            <?php
-                                            $file = "quoteToday.txt";
-                                            $fh = fopen($file, "r");
-                                            $string = fread($fh, filesize($file));
-                                            fclose($fh);
-                                            echo "<p>$string</p>";
-                                            ?>
+                                            <p><b><?php echo "$author<br />"; ?></b><?php echo "$description"; ?></p>
                                         </div>
                                     </div>
                                     <div class="social-media-btn">
