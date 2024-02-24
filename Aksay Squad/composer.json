@@ -1,0 +1,20 @@
+{
+    "name": "damir/aksaysquad-project",
+    "type": "project",
+    "require": {
+        "telegram-bot/api": "^2.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Damir\\AksaysquadProject\\": "compos/"
+        }
+    },
+    "authors": [
+        {
+            "name": "damirTAG",
+            "email": "damirtagilbayev17@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
