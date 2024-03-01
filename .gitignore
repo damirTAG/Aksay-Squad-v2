@@ -1,4 +1,3 @@
 errors
-poll/js/jquery.js
-data/js/jquery.js
-memes/js/lightbox-plus-jquery.js
+**/jquery.js
+**/lightbox-plus-jquery.js
