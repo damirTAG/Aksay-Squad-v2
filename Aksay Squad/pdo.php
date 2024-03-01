@@ -71,8 +71,8 @@ class Connection
         $firstNoteInfo = $this->getFirstId();
         $firstNoteId = $firstNoteInfo['first_note_id'];
         if ($insertResult) {
-            $telegramBotToken = 'BOT_TOKEN';
-            $telegramChannelId = 'CHAT_ID';
+            $telegramBotToken = '5948774231:AAFdnD-PDz627zzxjsEJ19c_isi8KeQok1U';
+            $telegramChannelId = '-1002124641896';
 
             $telegram = new \TelegramBot\Api\BotApi($telegramBotToken);
 
@@ -87,7 +87,7 @@ class Connection
                 ]
             );
             $messageText = "🆕 Новая цитата на сайте!\n🗣 Автор: {$note['title']}";
-            $telegramChatIds = [-1002103361664]; // $telegramChatIds = [-1002124641896, -1001542765135, -1001559555304, -1002103361664]; | [-1002124641896, 1038468423];
+            $telegramChatIds = [-1002103361664]; // $telegramChatIds = [-1002124641896, -1001542765135, -1001559555304, 1002103361664]; | [-1002124641896, 1038468423];
             foreach ($telegramChatIds as $chatId) {
                 $telegram->sendMessage($chatId, $messageText, null, false, null, $keyboard);
             }
