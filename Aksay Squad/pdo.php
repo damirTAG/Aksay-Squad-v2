@@ -71,7 +71,7 @@ class Connection
         $firstNoteInfo = $this->getFirstId();
         $firstNoteId = $firstNoteInfo['first_note_id'];
         if ($insertResult) {
-            $telegramBotToken = '5948774231:AAFdnD-PDz627zzxjsEJ19c_isi8KeQok1U';
+            $telegramBotToken = 'TOKEN_HERE';
             $telegramChannelId = '-1002124641896';
 
             $telegram = new \TelegramBot\Api\BotApi($telegramBotToken);
