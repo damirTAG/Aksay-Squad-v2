@@ -51,14 +51,13 @@ This API provides access to a collection of quotes, allowing users to fetch all 
 **Parameters:**
 `url (string, required): The URL from which to fetch data.`
 
-Response:
-
+**Response:**
 ```json
 {
   "data": "Fetched data from the specified URL."
 }
-Example:
-
+```
+**Example:**
 ```bash
 GET /api/url.php?url=https://example.com
 ```
