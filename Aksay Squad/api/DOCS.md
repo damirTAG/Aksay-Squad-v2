@@ -23,7 +23,6 @@ This API provides access to a collection of quotes, allowing users to fetch all 
     "description": "Quote description",
     "create_date": "2024-05-18 12:00:00"
   },
-  ...
 ]
 ```
 ### 2. Get a Random Quote
@@ -33,9 +32,8 @@ This API provides access to a collection of quotes, allowing users to fetch all 
 
 **Description:** Fetches a random quote from the database.
 
-Response:
+**Response:**
 ```json
-Копировать код
 {
   "id": 5,
   "title": "Random Author",
@@ -50,13 +48,12 @@ Response:
 
 **Description:** Fetches data from the specified URL.
 
-Parameters:
+**Parameters:**
+`url (string, required): The URL from which to fetch data.`
 
-url (string, required): The URL from which to fetch data.
 Response:
 
-json
-Копировать код
+```json
 {
   "data": "Fetched data from the specified URL."
 }
@@ -71,12 +68,12 @@ GET /api/url.php?url=https://example.com
 
 **Method:** `GET`
 
-**Description: **Fetches a specific quote by its ID.
+**Description:** Fetches a specific quote by its ID.
 
 **Parameters:**
 `id (int, required): The ID of the quote to fetch.`
 
-Response:
+**Response:**
 ```json
 {
   "id": 1,
@@ -85,7 +82,7 @@ Response:
   "create_date": "2024-05-18 12:00:00"
 }
 ```
-Example:
+**Example:**
 ```bash
 GET /api/quotes/show.php?id=1
 ```
@@ -97,11 +94,11 @@ GET /api/quotes/show.php?id=1
 
 **Description:** Searches for quotes that match the specified query and returns a specified number of results.
 
-Parameters:
-- query (string, required): The search query.
-- count (int, optional): The number of results to return. Default is 10.
-Response:
+**Parameters:**
+`- query (string, required): The search query.`
+`- count (int, optional): The number of results to return. Default is 10.`
 
+**Response:**
 ```json
 [
   {
@@ -113,7 +110,7 @@ Response:
   ...
 ]
 ```
-Example:
+**Example:**
 ```bash
 GET /api/quotes/search.php?query=inspiration&count=5
 ```
