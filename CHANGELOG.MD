@@ -1,5 +1,9 @@
 # Changelogs for <a href="https://aksaysquad.infinityfreeapp.com/">Aksay Squad Web-App</a>
 
+### — [0.0.8]
+Added some API endpoints for retrieving data right from mysql db using pdo.php file
+[See docs here.](https://github.com/damirTAG/Aksay-Squad-v2/blob/main/Aksay%20Squad/api/DOCS.md)
+
 ### — [0.0.7]
 <b>Front-end:</b> Updated design, now it is shown when the quote was updated by the admin in the admin panel (in the future this feature will be available to all registered users). Now shows to user is there no search results
 
